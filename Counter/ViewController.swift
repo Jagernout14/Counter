@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     
     
-    var count = 3
+    var count = 0
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var textOnCounter: UILabel!
     override func viewDidLoad() {
@@ -19,11 +19,12 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        textOnCounter.text = "\(count)"
+        textOnCounter.text = "Значение счетчика \(count)"
     }
+    
     @IBAction func addNumber(_ sender: UIButton) {
         count += 1
-        textOnCounter.text = "\(count)"
+        textOnCounter.text = "Значение счетчика \(count)"
     }
 }
     
