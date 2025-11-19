@@ -29,7 +29,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="title"/>
                                 <connections>
-                                    <action selector="addNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mao-gO-RQ6"/>
+                                    <action selector="addNumberOnText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jyt-ex-nFs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,8 +37,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="actionButton" destination="pXZ-Tr-Alz" id="yVc-fR-yML"/>
-                        <outlet property="textOnCounter" destination="cgB-YA-Fgx" id="y0q-6T-POa"/>
+                        <outlet property="actionButton" destination="pXZ-Tr-Alz" id="MBk-zN-Cp9"/>
+                        <outlet property="counterText" destination="cgB-YA-Fgx" id="ovq-tH-v9q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,22 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    
-    var count = 0
-    @IBOutlet weak var actionButton: UIButton!
-    @IBOutlet weak var textOnCounter: UILabel!
+   private var count = 0
+  @IBOutlet weak private var actionButton: UIButton!
+   @IBOutlet weak private var counterText: UILabel!
     override func viewDidLoad() {
-        
-        
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        textOnCounter.text = "Значение счетчика \(count)"
+        counterText.text = "Значение счетчика \(count)"
+        actionButton.setTitle("+1", for: .normal)
     }
     
-    @IBAction func addNumber(_ sender: UIButton) {
+    @IBAction private func addNumberOnText(_ sender: UIButton) {
         count += 1
-        textOnCounter.text = "Значение счетчика \(count)"
+        counterText.text = "Значение счетчика \(count)"
     }
 }
     
